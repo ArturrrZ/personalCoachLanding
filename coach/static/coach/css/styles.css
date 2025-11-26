@@ -1,0 +1,307 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, nav {
+  background-color: #161616;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+section {
+    scroll-margin-top: 56px;
+}
+.full-width-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero-section {
+    margin-top:56px;
+    height:100vh;
+    background-image: url('../img/treadmills.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
+.hero-quote{
+  font-size:4rem;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+}
+#about {
+  text-align: center;
+  height: 60vh;
+  max-width: 74%;
+  margin: 60px auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+.about-bottom{
+  text-align: left;
+}
+#about-title{
+  font-size:16px;
+  color:#575757;
+}
+#about-name{
+  font-size: 60px;
+  font-weight: 700;
+}
+.about-training {
+  color: #ffffff;
+}
+/* -----------------------SERVICES------------------------- */
+#services{
+  display: grid; 
+  grid-template-columns: 1fr;
+  gap: 0px;
+  width: 100%;
+}
+#services > img {
+  width:100%;
+  height: auto;
+}
+.services-text {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.services-price {
+  color: rgba(255, 238, 0, 0.85) ;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.services-session{
+  font-size: 10px;
+  font-style:italic;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.services-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.services-list img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  color: #FFD700;
+}
+
+/* -----------------------REVIEWS------------------------- */
+#reviews {
+  padding: 80px 20px;
+  display:flex;
+  justify-content: center;
+}
+
+.reviews-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.reviews-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.review-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  padding: 40px;
+  text-align: center;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: #FFD700;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+
+.review-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.review-author {
+  font-weight: bold;
+  color: rgba(255, 215, 0, 0.85);
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* -----------------------CONTACT------------------------- */
+#contact {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.contact-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 12px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 215, 0, 0.5);
+  color: #ffffff;
+  box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-info {
+  text-align: center;
+  color: #ffffff;
+  line-height: 2;
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .hero-quote {
+    font-size: 3rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #services {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-text {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #about {grid-template-columns: 1fr;}
+  .hero-section {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-quote {
+    font-size: 2rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
+  }
+
+  #services {
+    grid-template-columns: 1fr;
+  }
+  #services-0 {order:0}
+  #services-1 {order:1}
+  #services-2 {order:3}
+  #services-3 {order:2}
+  #services-4 {order:4}
+  #services-5 {order:5}
+  .services-text{text-align: center;}
+}
+@media screen and (max-width: 1024px) {
+  #about {
+    grid-template-columns: 1fr;
+    width:90%;
+  }
+  #about img {order: -1}
+}

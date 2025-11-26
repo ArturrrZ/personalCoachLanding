@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}Personal Coach{% endblock %}
+{% block main %}
+<section class="hero-section"><div class="hero-quote">Become the strongest version of yourself</div></section>
+<section id="about">
+  <div id="about-info">
+    <p id="about-title">Hello, my name is</p>
+    <p id="about-name">Artur Ziianbaev</p>
+    <p class="lead">I’m a certified personal coach dedicated to helping you reach your fitness goals,
+       build confidence, and create healthy habits that last a lifetime.
+    <div class="about-bottom">
+                    <img src="{% static 'coach/img/barbell.svg' %}" alt="barbell" width="30px" class="barbell">
+                    <span class="about-training">Training programs and more</span>
+               <br/><br/>     
+              <a href="https://www.instagram.com/z1nbv/"><button type="button" class="btn btn-outline-warning" id="button_instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+</svg>
+                
+              </button></a>
+                    
+    </div>  
+  </div>
+  <img src="{% static 'coach/img/about.jpg' %}" alt="photo of me in the gym" width="100%"/>
+</section>
+<section id="reviews">
+  <div class="reviews-container">
+    <h2 class="reviews-title">What My Clients Say</h2>
+    <div id="reviewsCarousel" class="carousel slide" data-bs-interval="5000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Artur transformed my fitness journey! His personalized approach and constant motivation helped me achieve results I never thought possible. Highly recommended!"</p>
+            <p class="review-author">— Sarah M.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"The workout plan was exactly what I needed. Clear instructions, progressive difficulty, and I saw real progress in just 30 days. Worth every penny!"</p>
+            <p class="review-author">— James K.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Combined the workout plan with the diet plan and got incredible results. Artur's nutritional guidance was game-changing. I feel stronger and healthier than ever!"</p>
+            <p class="review-author">— Emma R.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"The private training sessions are worth every cent. Real-time form corrections prevented injuries and kept me motivated. Best investment in my health!"</p>
+            <p class="review-author">— Michael T.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+<section id="services">
+    <img id='services-0' src="{% static 'coach/img/services1.jpg' %}"/>
+    <div id='services-1' class="services-text">
+        <h2>
+            <em>
+                Private Training
+            </em>    
+        </h2>
+        <div><span class="services-price">$50</span> <span class="services-session">per session</span></div>
+        <hr />
+        <ul class="services-list">
+            <li><img src="{% static 'coach/img/muscle.svg' %}" alt="muscle"> Personalized workout tailored to your goals</li>
+            <li><img src="{% static 'coach/img/target.svg' %}" alt="target"> Real-time form correction and motivation</li>
+            <li><img src="{% static 'coach/img/chart.svg' %}" alt="chart"> Progress tracking and adjustments</li>
+        </ul>
+        <a href="#contact" style="display:block"><button type="button" class="btn btn-warning" style="width:100%">Start training</button></a>
+
+    </div>
+
+    <div id='services-2' class="services-text">
+        <h2>
+            <em>
+                Workout Plan
+            </em>    
+        </h2>
+        <div><span class="services-price">$100</span> <span class="services-session">90 days to make some changes</span></div>
+        <hr />
+        <ul class="services-list">
+            <li><img src="{% static 'coach/img/plan.svg' %}" alt="plan"> Complete 90-day progressive training program</li>
+            <li><img src="{% static 'coach/img/checklist.svg' %}" alt="checklist"> Detailed instructions for every exercise</li>
+            <li><img src="{% static 'coach/img/flexible.svg' %}" alt="flexible"> Flexible adjustments based on your equipment</li>
+        </ul>
+        <a href="#contact" style="display:block"><button type="button" class="btn btn-warning" style="width:100%">Get it</button></a>
+
+    </div>
+    <img id='services-3' src="{% static 'coach/img/services2.jpg' %}" />
+    
+    <img id='services-4' src="{% static 'coach/img/diet.jpg' %}" />
+    <div id='services-5' class="services-text">
+        <h2>
+            <em>
+                Diet Plan
+            </em>    
+        </h2>
+        <div><span class="services-price">$75</span> <span class="services-session">90 days to make some changes</span></div>
+        <hr />
+        <ul class="services-list">
+            <li><img src="{% static 'coach/img/nutrition.svg' %}" alt="nutrition"> Customized meal plan based on your preferences</li>
+            <li><img src="{% static 'coach/img/macro.svg' %}" alt="macro"> Macro tracking and nutritional guidance</li>
+            <li><img src="{% static 'coach/img/gift.svg' %}" alt="gift"> Bonus: Weekly tips and recipe ideas</li>
+        </ul>
+        <a href="#contact" style="display:block"><button type="button" class="btn btn-warning" style="width:100%">Get your diet plan</button></a>
+
+    </div>
+</section>
+
+<section id="contact">
+  <div class="contact-container">
+    <h2 class="contact-title">Get In Touch</h2>
+    <p class="contact-subtitle">Ready to start your fitness journey? Reach out to me!</p>
+    
+    <form class="contact-form">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" required placeholder="email@email.com"/>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      
+      <button class="btn btn-warning btn-lg" id="sendMessage">Send Message</button>
+    </form>
+    
+    <div class="contact-info">
+      <p><strong>Email:</strong> arturziianbaev@gmail.com</p>
+      <p><strong>Phone:</strong> +1 (111) 111-1111</p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/z1nbv/">@z1nbv</a></p>
+      <p><strong>Location:</strong> Available for online coaching worldwide</p>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
